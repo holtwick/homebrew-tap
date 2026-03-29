@@ -1,9 +1,9 @@
 class Bx < Formula
   desc "Launch apps in a macOS sandbox — only the project directory is accessible"
   homepage "https://github.com/holtwick/bx-mac"
-  url "https://github.com/holtwick/bx-mac/releases/download/v0.9.0/bx.js"
-  sha256 "6e085266b72516f7d7f963a3156ba1817ae3de721319fd84b04f85b2ee08cd89"
-  version "0.9.0"
+  url "https://github.com/holtwick/bx-mac/releases/download/v0.10.0/bx.js"
+  sha256 "f99373d54701b3f4a800120e95a757553d7637b325a9639940b71a64a9c62654"
+  version "0.10.0"
   license "MIT"
 
   depends_on "node"
