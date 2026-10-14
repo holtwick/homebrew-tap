@@ -1,17 +1,12 @@
 cask "bx" do
-  version "1.4,14000"
-  sha256 "7c51c913bf97c746348ed2cf3b4c96bf0583e5476ef8b640d4352f715dfe66ac"
+  version :latest
+  sha256 :no_check
 
-  url "https://bxsandbox.app/download/macos/BX-#{version.csv.first}-#{version.csv.second}.zip"
+  url "https://bxsandbox.app/latest"
   name "BX"
   name "BX Sandbox"
   desc "Run apps in a sandbox that only sees the folders you allow"
   homepage "https://bxsandbox.app/"
-
-  livecheck do
-    url "https://bxsandbox.app/updater-macos"
-    strategy :sparkle
-  end
 
   auto_updates true
   depends_on macos: :sonoma
