@@ -5,7 +5,7 @@ cask "bx" do
   url "https://bxsandbox.app/download/macos/BX-#{version.csv.first}-#{version.csv.second}.zip"
   name "BX"
   name "BX Sandbox"
-  desc "Sandbox for Mac apps that only sees the folders you allow"
+  desc "Run apps in a sandbox that only sees the folders you allow"
   homepage "https://bxsandbox.app/"
 
   livecheck do
@@ -14,7 +14,7 @@ cask "bx" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "BX.app"
 
